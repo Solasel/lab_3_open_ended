@@ -7,7 +7,7 @@
  * 	size of the LSU queue. */
 
 #include "util.h"
-#define MAX_SIZE (64)
+#define MAX_SIZE (8)
 #define ITERS (100)
 
 /* Change this value, and see when the
@@ -29,7 +29,7 @@ void lsu_size_test( /* args */ )
 
 		val = values[TEST];
 
-		for (; k < MAX_SIZE; j++)
+		for (; j < MAX_SIZE; j++)
 			values[j] = j;
 	}
 }
