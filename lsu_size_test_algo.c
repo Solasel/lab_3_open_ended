@@ -1,3 +1,11 @@
+/* Set MAX_SIZE to be larger than you really expect the LSU queue
+ * 	to be.
+ *
+ * Then, vary TEST from the minimum possible size upwards. It should
+ * 	be fairly similar across iterations, until there is a huge
+ * 	drop in performance. This occurs when TEST is equal to the
+ * 	size of the LSU queue. */
+
 #include "util.h"
 #define MAX_SIZE (64)
 #define ITERS (100)
